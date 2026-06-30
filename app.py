@@ -62,14 +62,14 @@ MENU = {
 # ─────────────────────────────────────────────────────────────
 
 def handle_greeting(message):
-    return (f"Hi there! 👋 Welcome to {RESTAURANT_INFO['name']}. "
+    return (f"Hi there!  Welcome to {RESTAURANT_INFO['name']}. "
             f"I can help you with our menu, store hours, delivery, or reservations. "
             f"What would you like to know?")
 
 def handle_hours(message):
     return (f"Our store hours are:\n"
-            f"📅 {RESTAURANT_INFO['hours']['weekday']}\n"
-            f"📅 {RESTAURANT_INFO['hours']['weekend']}")
+            f" {RESTAURANT_INFO['hours']['weekday']}\n"
+            f" {RESTAURANT_INFO['hours']['weekend']}")
 
 def handle_menu(message):
     # Detect if a specific category was asked
@@ -100,25 +100,25 @@ def handle_delivery(message):
     info = RESTAURANT_INFO['delivery']
     if not info['available']:
         return "Sorry, we currently don't offer delivery. Dine-in and takeaway are available!"
-    return (f"Yes, we deliver! 🚚\n"
+    return (f"Yes, we deliver! \n"
             f"• Delivery radius: {info['radius_km']} km\n"
             f"• Free delivery on orders above Rs. {info['free_delivery_above']}\n"
             f"• Delivery fee: Rs. {info['delivery_fee']} (below free threshold)\n\n"
             f"Want to place an order?")
 
 def handle_reservation(message):
-    return (f"I'd love to help you book a table! 🍽️\n"
+    return (f"I'd love to help you book a table! \n"
             f"Please call us at {RESTAURANT_INFO['phone']} or reply with your preferred "
             f"date, time, and number of guests, and I'll note it down.")
 
 def handle_location(message):
-    return f"📍 We're located at {RESTAURANT_INFO['address']}.\nCall us: {RESTAURANT_INFO['phone']}"
+    return f" We're located at {RESTAURANT_INFO['address']}.\nCall us: {RESTAURANT_INFO['phone']}"
 
 def handle_human(message):
-    return f"No problem! You can reach our team directly at {RESTAURANT_INFO['phone']}. They're available during store hours. 📞"
+    return f"No problem! You can reach our team directly at {RESTAURANT_INFO['phone']}. They're available during store hours. "
 
 def handle_thanks(message):
-    return "You're welcome! 😊 Anything else I can help you with?"
+    return "You're welcome!  Anything else I can help you with?"
 
 def handle_fallback(message):
     return ("I'm not sure I understood that. I can help with:\n"
