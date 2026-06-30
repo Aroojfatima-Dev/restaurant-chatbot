@@ -1,4 +1,4 @@
-# 🍽️ Restaurant AI Chatbot (Flask + Python)
+#  Restaurant AI Chatbot (Flask + Python)
 
 A rule-based, intent-matching AI chatbot built for restaurants — handles menu queries, store hours, delivery information, and table reservations automatically.
 
@@ -6,19 +6,19 @@ Built as a portfolio project to demonstrate backend chatbot logic using **Python
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🍴 **Menu browsing** — full menu or category-specific (starters, main course, desserts, beverages)
-- 🕘 **Store hours** — instant answers on weekday/weekend timing
-- 🚚 **Delivery info** — radius, fees, and free delivery threshold
-- 📅 **Table reservations** — captures booking requests
-- 📍 **Location & contact** — address and phone number
-- 💬 **8 intent categories** with keyword/regex pattern matching
-- 🎨 **Clean chat UI** — typing-style interface with quick reply buttons
+-  **Menu browsing** — full menu or category-specific (starters, main course, desserts, beverages)
+-  **Store hours** — instant answers on weekday/weekend timing
+-  **Delivery info** — radius, fees, and free delivery threshold
+-  **Table reservations** — captures booking requests
+-  **Location & contact** — address and phone number
+-  **8 intent categories** with keyword/regex pattern matching
+-  **Clean chat UI** — typing-style interface with quick reply buttons
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend:** Python, Flask
 - **Frontend:** HTML, CSS, JavaScript (vanilla, no frameworks)
@@ -26,7 +26,7 @@ Built as a portfolio project to demonstrate backend chatbot logic using **Python
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 restaurant-chatbot/
@@ -39,7 +39,7 @@ restaurant-chatbot/
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 1. **Clone the repository**
 ```bash
@@ -64,7 +64,7 @@ http://localhost:5000
 
 ---
 
-## 🧠 How the Intent Matching Works
+##  How the Intent Matching Works
 
 Instead of using a paid LLM API for every message, this bot uses a lightweight **regex-based intent matcher**:
 
@@ -78,14 +78,14 @@ INTENTS = [
 
 Each incoming message is scanned against these patterns. The first match triggers its handler function, which returns a relevant, pre-written response. This approach is:
 
-- ✅ **Free** — no API costs
-- ✅ **Fast** — no network latency
-- ✅ **Predictable** — reliable for a well-defined business domain
-- ✅ **Easy to extend** — add a new intent in a few lines
+-  **Free** — no API costs
+-  **Fast** — no network latency
+-  **Predictable** — reliable for a well-defined business domain
+-  **Easy to extend** — add a new intent in a few lines
 
 ---
 
-## 💡 Use Case
+##  Use Case
 
 This architecture is ideal for small businesses (restaurants, salons, clinics) that need a **reliable FAQ + order-taking bot** without ongoing AI API costs. It can be customized per client by editing the `RESTAURANT_INFO` and `MENU` dictionaries.
 
