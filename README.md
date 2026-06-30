@@ -1,3 +1,10 @@
+[![GitHub stars](https://img.shields.io/github/stars/Aroojfatima-Dev/restaurant-chatbot?style=social)](https://github.com/Aroojfatima-Dev/restaurant-chatbot/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Aroojfatima-Dev/restaurant-chatbot?style=social)](https://github.com/Aroojfatima-Dev/restaurant-chatbot/network)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)]()
+[![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)]()
+
+
 #  Restaurant AI Chatbot (Flask + Python)
 
 A rule-based, intent-matching AI chatbot built for restaurants — handles menu queries, store hours, delivery information, and table reservations automatically.
